@@ -18,3 +18,7 @@ def create_item(item: Item):
 @app.delete("/items/{item_id}")
 def delete_item(item_id: int):
   return {"delete":item_id}
+
+@app.post("/goods")
+def put_item(item: Item):
+  return item
