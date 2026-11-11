@@ -15,6 +15,3 @@ def list_items():
 def create_item(item: Item):
   return item
 
-@app.delete("/items/{item_id}")
-def delete_item(item_id: int):
-  return {"delete":item_id}
